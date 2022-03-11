@@ -15,7 +15,7 @@ func newBinaryUUIDGenerator(base base) (Generator, error) {
 }
 
 // see https://bsonspec.org/spec.html
-const binaryUUIDSubtype = 0x04
+const binaryUUIDSubtype = 0x03
 
 func (g *binaryUUIDGenerator) EncodeValue() {
 	b, _ := uuid.New().MarshalBinary()
